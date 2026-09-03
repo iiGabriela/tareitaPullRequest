@@ -1,0 +1,71 @@
+:root {
+    --fondo-claro: #f8fafc;
+    --texto-claro: #0f172a;
+    --color-primario: #2563eb;
+    --fondo-tarjeta: #ffffff;
+}
+
+.modo-oscuro {
+    --fondo-claro: #0f172a;
+    --texto-claro: #f8fafc;
+    --fondo-tarjeta: #1e293b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-claro);
+    color: var(--texto-claro);
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--fondo-tarjeta);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.presentacion {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intereses h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta {
+    background-color: var(--fondo-tarjeta);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-bottom: 3px solid var(--color-primario);
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primario);
+    color: white;
+    font-weight: bold;
+}
